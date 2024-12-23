@@ -8,7 +8,7 @@ import { IoIosLink } from 'react-icons/io';
  
 const footerContent = {
   text: {
-    logo: '/assets/logo.png',
+    logo: '/logo.png',
     description:
       '成績はもう上がらないとあきらめていませんか？ 成績が上がらないのは能力のせいではありません。今までのやり方を変えるだけで、学力・成績は短期間で飛躍的に伸びます！',
   },
@@ -66,7 +66,6 @@ const footerContent = {
     address: {
       street: '東京都港区芝公園１',
       phone: '(0120) 123-4567',
-      website: 'https://origindoc.com',
     },
   },
 };
@@ -147,15 +146,11 @@ function Footer() {
                 <FaPhoneAlt className="text-xl text-green" />
                 <span>{footerContent.contact.address.phone}</span>
               </li>
-              <li className="flex items-start space-x-3 mb-5">
-                <IoIosLink className="text-xl text-green" />
-                <span>{footerContent.contact.address.website}</span>
-              </li>
             </ul>
           </div>
         </div>
         <div className="text-center pt-10 border-t border-gray-200">
-          Copyright ORIGIN.Doc 2023
+          Copyright Mesluz Cram School 2024
         </div>
       </div>
     </footer>

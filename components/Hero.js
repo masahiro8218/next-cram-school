@@ -7,10 +7,10 @@ import 'aos/dist/aos.css';
 
 const heroContent = {
   text: {
-    subTitle: 'ORIGIN.Docゼミ',
+    subTitle: 'Mesluz Cram School',
     title: 'ひとつ上を目指せる！',
     discription:
-      'ようこそ！  未来のために、共に学び、成長しましょう。ORIGIN.Docゼミでは、生徒一人ひとりに合わせたカリキュラムで、確かな学力向上を目指します。私たちは教育のプロフェッショナルが揃い、生徒たちが自信を持ち、自ら考え、進んで学ぶ力を身につけられるようサポートしています。',
+      'ようこそ！  未来のために、共に学び、成長しましょう。Mesluz Cram Schoolでは、生徒一人ひとりに合わせたカリキュラムで、確かな学力向上を目指します。私たちは教育のプロフェッショナルが揃い、生徒たちが自信を持ち、自ら考え、進んで学ぶ力を身につけられるようサポートしています。',
   },
   images: {
     img1: '/hero-img-1.jpg',

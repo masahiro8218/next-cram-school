@@ -8,9 +8,9 @@ import 'aos/dist/aos.css';
 
 const testimonialsContent = {
   text: {
-    subTitle: '2023年度 合格者の声',
-    title: '難関大へ2023合格者の声',
-    description: 'Docゼミから志望大学に合格した方の声がたくさん届いています！',
+    subTitle: '2024年度 合格者の声',
+    title: '難関大へ2024合格者の声',
+    description: 'Cram Schoolから志望大学に合格した方の声がたくさん届いています！',
   },
   testimonials: [
     {
@@ -72,11 +72,6 @@ function Testimonials() {
             >
               {testimonialsContent.text.description}
             </p>
-            <div data-aos='fade-up' data-aos-delay='400'>
-              <Link href={''} className='btnGreen'>
-                資料ダウンロード
-              </Link>
-            </div>
           </div>
 
           {/* 左 */}

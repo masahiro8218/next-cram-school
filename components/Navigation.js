@@ -6,6 +6,7 @@ import React, { useEffect, useState } from 'react';
 import { HiOutlineBars3 } from 'react-icons/hi2';
 import { IoClose } from 'react-icons/io5';
 import { BiChevronRight } from 'react-icons/bi';
+import { Link as ScrollLink } from 'react-scroll';
 
 const navigationMenu = [
   {
@@ -71,8 +72,16 @@ function Navigation() {
             <div className='hidden lg:block text-center'>
               <ul className='flex space-x-7'>
                 {navigationMenu.map((item, index) => (
-                  <li key={index} className='text-body'>
-                    <Link href={item.href}>{item.label}</Link>
+                  <li key={index} className='relative group'>
+                    <ScrollLink
+                      to={item.href.substring(1)}
+                      smooth={true}
+                      duration={500}
+                      className='text-body cursor-pointer'
+                    >
+                      {item.label}
+                    </ScrollLink>
+                    <span className='absolute left-0 bottom-0 h-0.5 w-full bg-blue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out' />
                   </li>
                 ))}
               </ul>
@@ -109,23 +118,25 @@ function Navigation() {
                 onClick={mobileMenuHandler}
               >
                 <IoClose />
-                <span>閉じる</span>
+                <span>閉��る</span>
               </button>
             </div>
             <div className='h-full py-3 px-10 pb-20'>
               <ul className='block mb-7'>
                 {navigationMenu.map((item, index) => (
                   <li key={index}>
-                    <Link
-                      href={item.href}
+                    <ScrollLink
+                      to={item.href.substring(1)}
                       className='group flex items-center py-2 duration-300 transition-all ease-out hover:text-green'
                       onClick={() => setNavOpen(false)}
+                      smooth={true}
+                      duration={500}
                     >
                       <span>{item.label}</span>
                       <span className='relative left-2 duration-300 transition-all ease-in-out opacity-0 group-hover:opacity-100 group-hover:left-3'>
                         <BiChevronRight className='text-xl' />
                       </span>
-                    </Link>
+                    </ScrollLink>
                   </li>
                 ))}
               </ul>

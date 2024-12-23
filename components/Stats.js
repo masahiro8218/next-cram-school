@@ -24,7 +24,7 @@ const statsContent = {
   text: {
     title: '担当アドバイザーによるサポート',
     description: '学習の目的や目標に合わせてあなただけの目標を設定しています',
-    img: '/assets/illustration.svg',
+    img: '/illustration.svg',
   },
 };
 

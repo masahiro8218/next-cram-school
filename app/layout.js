@@ -8,8 +8,8 @@ const mPlus1 = M_PLUS_1({
 });
 
 export const metadata = {
-  title: 'ORIGIN.Dogゼミ',
-  description: 'ORIGIN.Dogゼミのポートフォリオサイトです。',
+  title: 'Mesluz Cram School',
+  description: 'Mesluz Cram Schoolのポートフォリオサイトです。',
 };
 
 export default function RootLayout({ children }) {
